@@ -1,0 +1,205 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+/* COMEÇO DO MENU */
+a {
+  text-decoration: none;
+}
+a {
+  color: inherit;
+}
+
+li:hover {
+  background-color: #76ebb0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #74c69d;
+  color: white;
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  font-size: 1.2rem;
+  position: fixed;
+  z-index: 1;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li {
+  margin: 40px;
+}
+
+.logo {
+  width: 120px;
+  height: 90px;
+  margin-top: 20px;
+}
+
+/* FIM DO MENU */
+
+/* COMEÇO SLIDE CARROSEL */
+.item {
+  padding-top: 55px;
+}
+ul {
+  list-style: none outside none;
+  padding-left: 0;
+  margin: 0;
+}
+.demo .item {
+  margin-bottom: 60px;
+}
+.content-slider li {
+  text-align: center;
+  color: #fff;
+}
+.content-slider h3 {
+  margin: 0;
+  padding: 70px 0px;
+}
+
+.card-1 {
+  padding: 100px;
+  height: 300px;
+  background-image: url('/imagens/campanha.png');
+}
+.card-2 {
+  padding: 100px;
+  height: 300px;
+  background-image: url('/imagens/GettyImages-1216428400-e1597934582408.jpg');
+}
+.card-3 {
+  padding: 100px;
+  height: 300px;
+  background-image: url('/imagens/saiba.png');
+}
+
+.demo {
+  width: 800px;
+}
+/* FIM SLIDE CARROSEL */
+
+/* INICIO CARDS */
+.text-1 {
+  text-align: center;
+  margin-top: 30px;
+  color: #74c69d;
+  font-weight: 900;
+  font-size: 40px;
+}
+
+.container {
+  margin-top: 50px;
+  width: 100%;
+  height: 50vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-gap: 5px;
+
+  justify-content: center;
+}
+
+.container > div {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.container div:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.container h3 {
+  margin: 20px auto;
+}
+.bloco-1 {
+  width: 100px;
+  height: 100px;
+}
+
+#mascara {
+  text-align: center;
+}
+
+#sintomas {
+  text-align: center;
+}
+
+#info {
+  text-align: center;
+}
+/* FIM CARDS */
+
+/* INICIO ONGS */
+#ongs-parceiras {
+  margin-top: 50px;
+  width: 100%;
+  height: 40vh;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-gap: 50px;
+
+  justify-content: center;
+}
+
+#div-ongs {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 100px auto;
+}
+
+#botaoOngs {
+  font-weight: 800;
+  outline: none;
+  border: solid 2px;
+  font-size: 20px;
+  background-color: white;
+  color: #74c69d;
+}
+
+/* 
+FIM ONGS */
+
+/* BOTÃO AUMENTAR FONTE */
+#increase-font,
+#decrease-font {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background: white;
+  margin-top: 30px;
+}
+
+#increase-font {
+  margin-right: 20px;
+}
+
+/* FIM BOTÃO AUMENTAR FONTE */
+
+footer {
+  height: 80px;
+  background-color: #74c69d;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}

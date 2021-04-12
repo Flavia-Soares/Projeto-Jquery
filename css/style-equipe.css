@@ -1,0 +1,199 @@
+/*menu*/
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li:hover {
+  background-color: #76ebb0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #74c69d;
+  color: white;
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  font-size: 1.2rem;
+  position: fixed;
+  z-index: 1;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li {
+  margin: 40px;
+}
+
+.logo {
+  width: 120px;
+  height: 90px;
+  margin-top: 20px;
+}
+/*menu*/
+
+/* BOTÃO AUMENTAR FONTE */
+#increase-font,
+#decrease-font {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background: white;
+  margin-top: 30px;
+}
+
+#increase-font {
+  margin-right: 20px;
+}
+/* FIM BOTÃO AUMENTAR FONTE */
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+/* Desenvolvedores */
+
+.desenvolvedores {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 150px;
+  font-size: 16px;
+}
+.integrantes1 {
+  width: 30%;
+  height: 400px;
+  background-color: #d8f3f2a2;
+  border-top-left-radius: 90px;
+}
+.integrantes2 {
+  width: 30%;
+  height: 400px;
+  background-color: #d8f3f2a2;
+}
+.integrantes3 {
+  width: 30%;
+  height: 400px;
+  background-color: #d8f3f2a2;
+  border-top-right-radius: 90px;
+}
+#integrantesImg {
+  width: 40%;
+  height: 40%;
+  margin: 30px;
+  margin-left: 110px;
+}
+.conheca {
+  display: flex;
+  justify-content: space-between;
+  height: 200px;
+  margin-bottom: 100px;
+  padding-top: 60px;
+  background-color: #ffffff;
+}
+#conheca1 {
+  margin-top: 25px;
+  text-align: center;
+  color: rgb(77, 158, 175);
+  font-size: 1.4rem;
+}
+#imgEquipe {
+  float: right;
+}
+
+#desenvolvedor {
+  text-align: center;
+  /* font-size: 1.2em; */
+}
+
+#p {
+  text-align: center;
+  /* font-size: 16px; */
+}
+/* image, Virus*/
+
+#virus {
+  width: 100%;
+  height: 200px;
+  margin-top: 50px;
+  /*background-color: #52B69A;*/
+}
+#imgVirus1 {
+  margin-top: 50px;
+  width: 330px;
+}
+
+/* cadastro*/
+
+section {
+  padding: 10px;
+}
+
+#msg {
+  height: 150px;
+}
+
+textarea,
+input {
+  border: #ffffff;
+  width: 500px;
+  height: 50px;
+  padding: 10px;
+}
+
+#contato {
+  color: rgb(77, 158, 175);
+  padding-top: 60px;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#click {
+  text-align: center;
+  height: 150px;
+  width: 150px;
+  /*margin: 50px 670px 0px 670px;*/
+  /*display: none;*/
+}
+
+.frase-contato {
+  font-size: 30px;
+}
+
+#ancoraContato {
+  color: #52b69a;
+  text-align: center;
+}
+
+section table {
+  background-color: #52b69a;
+}
+
+table {
+  margin-left: 30%;
+}
+
+.nomes {
+  text-align: center;
+}
+
+/*footer*/
+footer {
+  height: 80px;
+  background-color: #74c69d;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}

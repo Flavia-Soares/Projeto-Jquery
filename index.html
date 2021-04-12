@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/lightslider.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    
+    
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+
+
+    <script type="text/javascript" src="script/lightslider.js"></script>
+    
+
+
+    <title>Projeto</title>
+  </head>
+
+  <body id="body">
+    <header class="header">
+      <a href="index.html"><img src="imagens/logo4.png" class="logo" /></a>
+      <nav>
+        <ul class="menu">
+          <button
+            name="increase-font"
+            id="increase-font"
+            title="Aumentar fonte"
+          >
+            A +
+          </button>
+          <button
+            name="decrease-font"
+            id="decrease-font"
+            title="Diminuir fonte"
+          >
+            A -
+          </button>
+
+          <li><a href="paginaCadastro.html">Vacinação</a></li>
+          <li><a href="infoVacina.html">Informações</a></li>
+          <li><a href="equipe.html">Equipe</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="item">
+      <ul id="content-slider" class="content-slider">
+        <li class="card-1"></li>
+        <li class="card-2"></li>
+        <li class="card-3"></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2 class="text-1">Fique Atento:</h2>
+    </div>
+    <div class="container">
+      <div id="mascara">
+        <h3>Precauções:</h3>
+        <img src="imagens/mask.png" class="bloco-1" />
+        <h3>Use máscara</h3>
+        <img src="imagens/wash-your-hands.png" class="bloco-1" />
+        <h3>Lave as mãos</h3>
+      </div>
+      <div id="sintomas">
+        <h3>Principais sintomas:</h3>
+
+        <img src="imagens/fever.png" class="bloco-1" />
+        <h3>Febre</h3>
+        <img src="imagens/fatigue.png" class="bloco-1" />
+        <h3>Dores e Cansaço</h3>
+      </div>
+      <div id="info">
+        <h3>Mesmo que já esteja vacinado:</h3>
+
+        <img src="imagens/crowd.png" class="bloco-1" />
+        <h3>Evite aglomeração</h3>
+        <img src="imagens/disinfectant.png" class="bloco-1" />
+        <h3>Continue com todos os cuidados</h3>
+      </div>
+    </div>
+
+    <div id="div-ongs">
+      <button id="botaoOngs">Ongs parceiras:</button>
+    </div>
+    <div id="ongs-parceiras">
+      <div align="center">
+        <a href="http://www.unicef.org/brazil/"
+          ><img src="imagens/unicef1.png" class="ong-1"
+        /></a>
+      </div>
+
+      <div align="center">
+        <a href="http://www.acaodacidadania.org.br"
+          ><img src="imagens/ong2.png" class="ong-2" />
+        </a>
+      </div>
+      <div align="center">
+        <a href="http://www.sefras.org.br/novo/"
+          ><img src="imagens/ong3.png" class="ong-3"
+        /></a>
+      </div>
+    </div>
+
+    <footer>
+      Desenvolvido por stayHome
+      <div id="data-hora"></div>
+    </footer>
+
+    <script src="script/script.js"></script>
+  </body>
+</html>

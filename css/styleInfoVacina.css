@@ -1,0 +1,257 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+a {
+  color: inherit;
+}
+
+.lista:hover {
+  background-color: #76ebb0;
+}
+
+/*BOTÃO AUMENTAR FONTE:*/
+
+/* BOTÃO AUMENTAR FONTE */
+#increase-font,
+#decrease-font {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background: white;
+  margin-top: 30px;
+}
+
+#increase-font {
+  margin-right: 20px;
+}
+
+/* FIM BOTÃO AUMENTAR FONTE */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #74c69d;
+  color: white;
+  height: 40px;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li {
+  margin: 40px;
+}
+
+.logo {
+  width: 120px;
+  height: 90px;
+  margin-top: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+/* CSS animação Slide - Começo */
+
+.anime_inicial {
+  opacity: 0;
+  transform: translate3d(-100px, 0, 0);
+  transition-duration: 3s;
+  /* border: solid 2px red; */
+  margin-left: 10px;
+  /* margin-bottom: 120px; */
+}
+
+.anime_final {
+  opacity: 1;
+  transform: translate3d(0px, 0, 0);
+}
+
+/* CSS animação Slide - FIM  */
+
+/* CSS animação Accordion - Começo */
+#title {
+  text-align: center;
+}
+
+#accordion {
+  /* border: solid 2px red; */
+  width: 60%;
+  align-items: center;
+  margin-left: 10px;
+}
+
+#vac1 {
+  background-color: #76ebb0;
+}
+#vac1:hover {
+  opacity: 0.8;
+}
+#vac2 {
+  background-color: #d8f3f2a2;
+}
+
+.eficacia {
+  padding-bottom: 20px;
+}
+
+#imgVac {
+  float: right;
+  width: 500px;
+  height: 500px;
+}
+
+/* CSS animação Accordion - Fim */
+
+#uti {
+  display: flex;
+  justify-content: space-between;
+}
+
+#uti p {
+  width: 400px;
+  height: 300px;
+}
+
+/* divs com slideToogle */
+
+#funcionaToggle {
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+}
+
+#funciona {
+  width: 100%;
+  height: 200px;
+  background-image: url(/imagens/stay.png);
+}
+
+/*  Fim da div com slideToogle */
+
+/* div com as fases */
+
+#fases form {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+}
+
+form input,
+button {
+  padding: 10px;
+}
+
+button:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+
+.corPadrao {
+  background-color: teal;
+}
+
+.duvidas {
+  margin-top: 50px;
+}
+/* mudança de cores dependendo das fases */
+/* div com as fases */
+
+#fase1Div {
+  display: none;
+  background-color: rgba(255, 0, 0, 0.349);
+}
+
+#fase2Div {
+  display: none;
+  background-color: rgba(240, 113, 10, 0.603);
+}
+
+#fase3Div {
+  display: none;
+  background-color: rgba(255, 255, 0, 0.363);
+}
+#fase4Div {
+  display: none;
+  background-color: rgba(0, 128, 0, 0.383);
+}
+#fase5Div {
+  display: none;
+  background-color: blue;
+}
+
+table,
+td,
+th {
+  padding: 5px;
+}
+
+#table {
+  width: 50%;
+  margin-left: 25%;
+}
+/* cores tabela fase1 */
+
+#t1 {
+  color: rgb(0, 0, 0);
+  background-color: rgb(98, 97, 97);
+}
+#t2 {
+  background-color: rgba(255, 0, 0, 0.349);
+}
+#t3 {
+  background-color: rgba(112, 72, 223, 0.418);
+}
+
+/* cores tabela fase2 */
+#fase2 {
+  background-color: orange;
+}
+#t4 {
+  background-color: rgba(248, 132, 0, 0.657);
+}
+
+/* cores tabela fase3 */
+#fase3 {
+  background-color: yellow;
+}
+#t5 {
+  background-color: rgba(255, 255, 0, 0.555);
+}
+#t6 {
+  background-color: rgba(0, 128, 0, 0.534);
+}
+
+/* cores tabela fase4 */
+#fase4 {
+  background-color: green;
+}
+
+/* cores tabela fase5 */
+#fase5 {
+  background-color: blue;
+}
+
+/* footer*/
+footer {
+  height: 80px;
+  background-color: #74c69d;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}

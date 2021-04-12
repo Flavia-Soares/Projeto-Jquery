@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style-equipe.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- menu -->
+    <header class="header">
+        <a href="index.html"><img src="imagens/logo4.png" class="logo"></a>
+        <nav>
+            <ul class="menu">
+                <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+                <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+
+                <li><a href="paginaCadastro.html">Vacinação</a></li>
+                <li><a href="infoVacina.html">Informações</a></li>
+                <li><a href="equipe.html">Equipe</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- menu -->
+
+
+
+    <section class="conheca">
+        <h3 id="conheca1">Um momento de crise é também uma oportunidade de união e de colaboração com a sociedade.
+            Mais do que nunca, a solidariedade está fazendo a diferença no enfrentamento à pandemia.
+            Com essa motivação, lideramos um amplo movimento para combater o coronavírus em parceria com empresas,
+            instituições de pesquisa e organizações sociais. E seguimos mobilizando recursos e empenhando esforços
+            para ajudar todo o país na luta contra o vírus.
+        </h3>
+        <img src="imagens/WhatsApp Image 2021-03-31 at 13.51.02.jpeg" alt="" style="width: 400px; height: 300px;"
+            id="imgEquipe">
+    </section>
+
+
+    <div class="desenvolvedores">
+
+        <div class="integrantes1" id="ana">
+
+            <img src="imagens/image 2 (1).png" id="integrantesImg">
+            <h2 id="desenvolvedor">Ana</h2>
+            <p id="p"> "Ana, 21 anos, estudante de Desenvolvimento FullStrack pela SoulCode Academy."
+            </p>
+        </div>
+
+        <div class="integrantes2" id="flavia">
+            <img src="imagens/image 5.png" id="integrantesImg">
+            <h2 id="desenvolvedor">Flávia</h2>
+            <p id="p">"Flávia, é formada em Ciências Contábeis pela Facho.
+                E atualmente é estudante de Web Development Full Stack na SoulCode Academy."</p>
+        </div>
+
+        <div class="integrantes3" id="leo">
+
+            <img src="imagens/leo 1 (1).png" id="integrantesImg">
+            <h2 id="desenvolvedor">Leonardo</h2>
+            <p id="p">"Leonardo, é formado em Matemática Aplicada pela FURG. Vêm
+                estudando desenvolvimento Web Full Stack com ênfase em back-end.
+                Seu interesse em programação surgiu durante o desenvolvimento do
+                TCC no qual utilizou Python."</p>
+        </div>
+
+    </div>
+    <div id="virus">
+        <img src="imagens/coronavirus-prevention.jpg" alt="" id="imgVirus1">
+        <img src="imagens/coronavirus-prevention.jpg" alt="" id="imgVirus1">
+        <img src="imagens/coronavirus-prevention.jpg" alt="" id="imgVirus1">
+        <img src="imagens/coronavirus-prevention.jpg" alt="" id="imgVirus1">
+    </div>
+
+    <div id="contato" aling="center">
+
+        <a><img src="imagens/Fale Conosco.png" id="click" alt="">
+            <h1 class="frase-contato">Para maiores informações <br> entre em contato com nossa equipe:</h1>
+        </a>
+    </div>
+
+    <section id="ancoraContato">
+        <table>
+            <tr>
+                <td>
+                    <section>
+                        <input type="text" title="Nome Completo" placeholder="Nome Completo*">
+                    </section>
+                    <input type="text" title="Email" placeholder="Email*" id="email">
+                    <section>
+                        <input type="text" title="Telefone" placeholder="DDD + Telefone*">
+                    </section>
+                    <section>
+                        <textarea id="msg" title="Deixe sua Mensagem" placeholder="Deixa sua mensagem"></textarea>
+                    </section>
+                    <button>
+                        <h2>Enviar</h2>
+                    </button>
+
+                </td>
+            </tr>
+            </form>
+        </table>
+    </section>
+
+
+    <footer>
+        Desenvolvido por stayHome
+        <div id="data-hora"></div>
+    </footer>
+
+
+    <script src="script/jquery.js"></script>
+</body>
+
+</html>

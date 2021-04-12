@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+}
+
+/*Formulário de Vacinação*/
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+h1 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* 
+----------------------------------------------- 
+-----------------------------------------------
+---------- Estilização página cadastro --------
+-----------------------------------------------
+-----------------------------------------------
+*/
+
+/* COMEÇO DO MENU */
+a {
+  text-decoration: none;
+}
+a {
+  color: inherit;
+}
+
+li:hover {
+  background-color: #76ebb0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #74c69d;
+  color: white;
+  height: 40px;
+  padding: 20px;
+  font-size: 1.2rem;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li {
+  margin: 40px;
+}
+
+.logo {
+  width: 120px;
+  height: 90px;
+  margin-top: 20px;
+}
+
+/* 
+-----------Estilização do formulário-----
+*/
+
+.container {
+  width: 60%;
+  height: fit-content;
+  background-color: #32686b;
+  margin: 0 auto;
+  margin-top: 80px;
+  margin-bottom: 320px;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+}
+
+/* 
+-----------Estilização do campos formulário-----
+*/
+
+input,
+select,
+button {
+  padding: 8px;
+  margin: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+}
+
+/* 
+-----------Fim Estilização do campos formulário-----
+*/
+
+/* 
+-----------Estilização do campo de nome-----
+*/
+
+#primeiraCamada input {
+  width: 60%;
+}
+
+#primeiraCamada label {
+  width: 5%;
+}
+
+/* 
+-----------Fim da estilização do campo de nome-----
+*/
+
+/* 
+-----------Estilização do campo de sexo-----
+*/
+
+#primeiraCamadaB label {
+  width: 20px;
+  width: 5%;
+}
+
+#primeiraCamadaB select {
+  width: 30%;
+}
+
+/* 
+-----------Fim da estilização do campo de sexo-----
+*/
+
+/* 
+----------- Estilização do campo de CPF-----
+*/
+
+#segundaCamada input {
+  width: 60%;
+}
+
+#segundaCamada label {
+  width: 20px;
+  width: 5%;
+}
+
+#segundaCamadaA input {
+  width: 60%;
+}
+
+#segundaCamadaA label {
+  width: 5%;
+}
+
+/* 
+----------- Fim da estilização do campo de CPF-----
+*/
+
+/* 
+-----------Estilização do campo de dia, mes, ano-----
+*/
+
+#terceiraCamada input {
+  width: 15%;
+}
+
+#terceiraCamada label {
+  width: 20%;
+}
+
+#terceiraCamada select {
+  width: 20%;
+}
+
+#profissao {
+  margin-left: 50px;
+  width: 30%;
+}
+
+#cartaoSUS {
+  margin-left: -50px;
+  width: 40%;
+}
+
+#comorbidades {
+  margin-left: -200px;
+}
+
+/* 
+-----------Fim da estilização do campo de dia, mes, ano-----
+*/
+
+/* Estilização do campo de gestante */
+
+#gestante {
+  margin-left: 30px;
+}
+
+.gestante {
+  display: none;
+}
+
+/* Comorbidades */
+
+#opcoesComorbidades {
+  display: none;
+}
+
+#opcoesComorbidades input,
+label,
+select {
+  width: 30%;
+  display: inline-block;
+}
+
+/* ------  Estilização cartão de vacina */
+
+#sextaCamada h4 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+#sextaCamada label,
+input {
+  height: 20px;
+}
+
+/* 
+-----------Estilização do campo de email-----
+*/
+
+/* #quartaCamada {
+  vertical-align: middle;
+} */
+
+#quartaCamada input {
+  width: 50%;
+  height: 20px;
+}
+
+#quartaCamada label {
+  width: 50%;
+  height: 20px;
+}
+
+#quintaCamada input {
+  height: 20px;
+  width: 50%;
+}
+
+#quintaCamada label {
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+#opcoesComorbidades input,
+label {
+  width: 20%;
+  font-size: 16px;
+}
+
+/* 
+-----------Fim da Estilização do campo de email-----
+*/
+
+/*
+Estilização peso altura
+*/
+
+#imc input,
+label {
+  width: 25%;
+}
+
+/* 
+-----------Estilização do botão de cadastramento-----
+*/
+
+#divDoBotao button {
+  text-align: center;
+  width: 40%;
+  cursor: pointer;
+  margin: 10px 30%;
+}
+
+#divDoBotao button:hover {
+  background-color: #ffdf2b;
+}
+
+/* 
+-----------Fim Estilização do botão de cadastramento-----
+*/
+
+/* 
+-----------Estilização da div em que vai aparecer o texto para o usuário-----
+*/
+
+.resposta {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-align: center;
+  color: black;
+}
+
+/* 
+----------- Fim Estilização da div em que vai aparecer o texto para o usuário-----
+*/
+
+/* Barra de progresso */
+
+progress {
+  display: inline-block;
+  margin: 4px 0;
+  height: 40px;
+  width: 100%;
+}
+
+/* 
+----------------------------------------------- 
+-----------------------------------------------
+---------- Estilização página cadastro --------
+-----------------------------------------------
+-----------------------------------------------
+*/
+
+/* BOTÃO AUMENTAR FONTE */
+#increase-font,
+#decrease-font {
+  width: 45px;
+  height: 45px;
+  border: none;
+  background: white;
+  margin-top: 30px;
+}
+
+#increase-font {
+  margin-right: 20px;
+}
+
+/* FIM BOTÃO AUMENTAR FONTE */
+
+footer {
+  height: 80px;
+  background-color: #74c69d;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+}

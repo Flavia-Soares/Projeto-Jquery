@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/estilo.css" />
+  <!-- fonte do google -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,100;1,300&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/jquery-ui.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <title>Página de Cadastro</title>
+</head>
+
+<body>
+  <header class="header">
+    <a href="index.html"><img src="imagens/logo4.png" class="logo"></a>
+    <nav>
+      <ul class="menu">
+        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+
+        <li><a href="paginaCadastro.html">Vacinação</a></li>
+        <li><a href="infoVacina.html">Informações</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <h1>Formulário de Vacinação</h1>
+
+  <div class="container">
+    <progress id="progress" max="100" value="0"></progress>
+    <!-- formulário de inscrição começa aqui! -->
+    <form action="" class="form">
+      <div id="primeiraCamada">
+        <label for="nome">Nome:</label>
+        <input class="progress" type="text" name="nome" id="nome" placeholder="Nome Completo" />
+      </div>
+
+      <div id="primeiraCamadaB">
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" placeholder="Sexo" class="progress">
+          <option value="naoInformado">Não Informado</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+        </select>
+
+        <div class="gestante">
+          <label for="genero">Gestante:</label>
+          <select class="progress" name="gestante" id="gestante">
+            <option value="selecionar">Selecionar opção</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="segundaCamada">
+        <label for="etnia">Etnia:</label>
+        <select class="progress" name="etnia" id="etnia">
+          <option value="selecionar">Selecionar etnia</option>
+          <option value="branco">Branca</option>
+          <option value="pardo">Parda</option>
+          <option value="preto">Preta</option>
+          <option value="amarelo">Amarela</option>
+          <option value="indigena">Indígena</option>
+          <option value="indefinido">Não informado</option>
+        </select>
+        <br />
+        <div id="imc">
+          <label for="peso">Peso:</label>
+          <input class="progress" type="text" name="peso" id="peso" placeholder="em kg" />
+          <label for="altura">Altura:</label>
+          <input class="progress" type="text" name="altura" id="altura" placeholder="em metros ex. 1.8" />
+          <br />
+        </div>
+
+        <label for="cpf">CPF:</label>
+        <input class="progress" type="text" id="cpf" nome="cpf" placeholder="00000000000" />
+        <br />
+
+        <div>
+          <label id="profissaoCss" for="profissao">Profissão:</label>
+          <select class="progress" id="profissao" name="profissao" placeholder="Profissão">
+            <option value="0">Nenhuma das Opções abaixo</option>
+            <option value="1">Enfermeiros</option>
+            <option value="1">Dentistas</option>
+            <option value="1">
+              Médicos da Família e Clínica Geral
+            </option>
+            <option value="1">
+              Cirurgiões bucomaxilofacial
+            </option>
+            <option value="1">
+              Terapeutas e técnicos de terapia respiratória
+            </option>
+            <option value="1">Assistentes de anestesia</option>
+            <option value="1">Terapeutas ocupacionais</option>
+            <option value="1">
+              Alergologistas e imunologistas
+            </option>
+            <option value="1">
+              Ginecologistas e obstetras
+            </option>
+            <option value="1">Dermatologistas</option>
+            <option value="1">Médicos Nucleares</option>
+            <option value="1">
+              Preparadores de Equipamentos Médicos
+            </option>
+            <option value="1">Oftalmologistas</option>
+            <option value="1">Pediatras</option>
+            <option value="1">Psiquiatras</option>
+            <option value="1">
+              Técnicos e paramédicos de emergência
+            </option>
+            <option value="1">Veterinários</option>
+            <option value="1">
+              Assistentes sociais de saúde
+            </option>
+            <option value="1">Flebotomistas</option>
+            <option value="1">Técnicos de endoscopia</option>
+            <option value="1">Cirurgiões</option>
+            <option value="1">Radiologistas</option>
+            <option value="1">
+              Técnicos de ressonância magnética
+            </option>
+            <option value="1">Microbiologistas</option>
+            <option value="1">Citotecnologistas</option>
+            <option value="2">Professores</option>
+            <option value="2">Forças Armadas</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="segundaCamadaB">
+        <label for="cartaoSUS">Cartão do Sus:</label>
+        <input class="progress" type="number" id="cartaoSUS" name="cartaoSus" />
+      </div>
+
+      <div id="terceiraCamada">
+        <label for="diaNascimento">Data de Nascimento:</label>
+        <input class="progress" min="0" max="30" name="diaNascimento" type="number" id="diaNascimento"
+          placeholder="Dia de Nascimento" />
+        <span> / </span>
+        <select class="progress" id="mes" name="mes" placeholder="Mês">
+          <option value="0">Janeiro</option>
+          <option value="1">Fevereiro</option>
+          <option value="2">Março</option>
+          <option value="3">Abril</option>
+          <option value="4">Maio</option>
+          <option value="5">Junho</option>
+          <option value="6">Julho</option>
+          <option value="7">Agosto</option>
+          <option value="8">Setembro</option>
+          <option value="9">Outubro</option>
+          <option value="10">Novembro</option>
+          <option value="11">Dezembro</option>
+        </select>
+        <span> / </span>
+        <input class="progress" min="0" type="number" name="ano" id="ano" placeholder="Ano" />
+      </div>
+
+      <div id="quartaCamada">
+        <div>
+          <label for="comorbidades">Possui Comorbidades:</label>
+          <select class="progress" name="comorbidade" id="comorbidades" placeholder="Possui alguma Comorbidade">
+            <option value="selecionar">Selecione:</option>
+            <option value="sim">Sim</option>
+            <option value="nao">Não</option>
+          </select>
+        </div>
+        <div id="opcoesComorbidades">
+          <label for="doencaCoracao"> Doenças cardíacas crônicas </label>
+          <input class="progress" type="checkbox" id="cardiacaCronica" name="cardiacaCronica"
+            value="cardiacaCronica" /><br />
+          <label for="cardiacaCongenita">Doença cardíaca congênita </label>
+          <input class="progress" type="checkbox" id="cardiacaCongenita" name="cardiacaCongenita"
+            value="cardiacaCongenita" />
+          <br />
+          <label for="insufCardMC">Insuficiência cardíaca mal controlada</label>
+          <input class="progress" type="checkbox" id="insufCardMC" name="insufCardMC" value="insufCardMC" />
+          <br />
+
+          <label for="cardiacaIsquemica">Doença cardíaca isquêmica descompensada</label>
+          <input class="progress" type="checkbox" id="cardiacaIsquemica" name="cardiacaIsquemica"
+            value="cardiacaIsquemica" />
+          <br />
+          <label for="respCronica">Doenças respiratórias crônicas</label>
+          <input class="progress" type="checkbox" id="respCronica" name="respCronica" value="respCronica" />
+          <br />
+
+          <label for="dPOC">DPOC e asma mal controlados</label>
+          <input class="progress" type="checkbox" id="dPOC" name="dPOC" value="dPOC" />
+          <br />
+
+          <label for="doencasPulmonares">Doenças pulmonares intersticiais com complicações:</label>
+          <input class="progress" type="checkbox" id="doencasPulmonares" name="doencasPulmonares"
+            value="doencasPulmonares" />
+          <br />
+
+          <label for="fibCist">Fibrose cística com infecções recorrentes</label>
+          <input class="progress" type="checkbox" id="fibCist" name="fibCist" value="fibCist" />
+          <br />
+
+          <label for="displasia">Displasia broncopulmonar com complicações</label>
+          <input class="progress" type="checkbox" id="displasia" name="displasia" value="displasia" />
+          <br />
+
+          <label for="crianDoePul">Crianças com doença pulmonar crônica da prematuridade</label>
+          <input class="progress" type="checkbox" id="crianDoePul" name="crianDoePul" value="crianDoePul" />
+          <br />
+
+          <label for="doencaRenaisCron">Doenças renais crônicas, em estágio avançado</label>
+          <input class="progress" type="checkbox" id="doencaRenaisCron" name="doencaRenaisCron"
+            value="doencaRenaisCron" />
+          <br />
+
+          <label for="nefropatias">Nefropatias</label>
+          <input class="progress" type="checkbox" id="nefropatias" name="nefropatias" value="nefropatias" />
+          <br />
+
+          <label for="pacientesDiálise">Pacientes em diálise</label>
+          <input class="progress" type="checkbox" id="pacientesDiálise" name="pacientesDiálise"
+            value="pacientesDiálise" />
+          <br />
+
+          <label for="imunossupressos">Imunossupressos</label>
+          <input class="progress" type="checkbox" id="imunossupressos" name="imunossupressos" value="imunossupressos" />
+          <br />
+
+          <label for="transpOrgao">Transplantados de órgãos sólidos e de medula óssea</label>
+          <input class="progress" type="checkbox" id="transpOrgao" name="transpOrgao" value="transpOrgao" />
+          <br />
+
+          <label for="imunossupressosPDoenca">Imunossupressão por doenças e/ou medicamentos</label>
+          <input class="progress" type="checkbox" id="imunossupressosPDoenca" name="imunossupressosPDoenca"
+            value="imunossupressosPDoenca" />
+          <br />
+
+          <label for="fragilidadeImuno">Portadores de doenças cromossômicas e com estados de fragilidade
+            imunológica</label>
+          <input class="progress" type="checkbox" id="fragilidadeImuno" name="fragilidadeImuno"
+            value="fragilidadeImuno" />
+          <br />
+
+          <label for="diabetes">Diabetes</label>
+          <input class="progress" type="checkbox" id="diabetes" name="diabetes" value="diabetes" />
+          <br />
+
+          <label for="obesidade">Obesidade</label>
+          <input class="progress" type="checkbox" id="obesidade" name="obesidade" value="obesidade" />
+          <br />
+
+          <label for="hepatopatias">Hepatopatias</label>
+          <input class="progress" type="checkbox" id="hepatopatias" name="hepatopatias" value="hepatopatias" />
+          <br />
+
+          <label for="doeHematologicas">Doenças hematológicas</label>
+          <input class="progress" type="checkbox" id="doeHematologicas" name="doeHematologicas"
+            value="doeHematologicas" />
+          <br />
+
+          <label for="transtNeuro">Transtornos neurológicos</label>
+          <input class="progress" type="checkbox" id="transtNeuro" name="transtNeuro" value="transtNeuro" />
+          <br />
+        </div>
+      </div>
+
+      <div id="sextaCamada">
+        <h4>Selecione abaixo as vacinas que estão no seu cartão de vacinação</h4>
+        <div id="opcoesVacinas">
+          <label for="tuberculose">Tuberculose</label>
+          <input class="progress" type="radio" id="tuberculose" name="tuberculose" value="tuberculose" />
+          <br />
+          <label for="hepatiteB">Hepatite B</label>
+          <input class="progress" type="radio" id="hepatiteB" name="hepatiteB" value="hepatiteB" />
+          <br />
+          <label for="dtcm">DTCM</label>
+          <input class="progress" type="radio" id="dtcm" name="dtcm" value="dtcm" />
+          <br />
+          <label for="poliomelite">Poliomelite</label>
+          <input class="progress" type="radio" id="poliomelite" name="poliomelite" value="poliomelite" />
+          <br />
+          <label for="sarampo">Sarampo</label>
+          <input class="progress" type="radio" id="sarampo" name="sarampo" value="sarampo" />
+          <br />
+          <label for="febreAmarela">Febre Amarela</label>
+          <input class="progress" type="radio" id="febreAmarela" name="febreAmarela" value="febreAmarela" />
+          <br />
+          <label for="difteriaeTetano">Difteria e Tétano</label>
+          <input class="progress" type="radio" id="difteriaeTetano" name="difteriaeTetano" value="difteriaeTetano" />
+          <br />
+          <label for="sarampoERubeola">Sarampo e Rubéola</label>
+          <input class="progress" type="radio" id="sarampoERubeola" name="sarampoERubeola" value="sarampoERubeola" />
+          <br />
+
+          <label for="gripe">Gripe</label>
+          <input class="progress" type="radio" id="gripe" name="gripe" value="gripe" />
+          <br />
+
+          <label for="pneumonia">Pneumonia</label>
+          <input class="progress" type="radio" id="pneumonia" name="pneumonia" value="pneumonia" />
+          <br />
+        </div>
+      </div>
+      <div id="quintaCamada">
+        <label for="email">Email:</label>
+        <input class="progress" type="text" name="email" id="email" placeholder="E-mail"
+          onblur="validacaoEmail(this)" />
+      </div>
+
+      <div id="divDoBotao">
+        <button type="submit">Enviar</button>
+      </div>
+    </form>
+    <!-- formulário de inscrição termina aqui! -->
+    <div id="resposta" class="resposta"></div>
+  </div>
+
+  <footer>
+    Desenvolvido por stayHome
+    <div id="data-hora"></div>
+  </footer>
+
+  <script src="script/script-formulario.js"></script>
+</body>
+
+</html>

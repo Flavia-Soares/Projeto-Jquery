@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styleInfoVacina.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,100;1,300&display=swap"
+    rel="stylesheet" />
+
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <title>Informações sobre a Vacina</title>
+  <header class="header">
+    <a href="index.html"><img src="imagens/logo4.png" class="logo"></a>
+    <nav>
+      <ul class="menu">
+        <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+        <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+
+        <li><a href="paginaCadastro.html">Vacinação</a></li>
+        <li><a href="infoVacina.html">Informações</a></li>
+        <li><a href="equipe.html">Equipe</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<body>
+
+  <h1 id="title">Vacinas aprovadas em fase emergencial:</h1>
+
+  <img src="imagens/vacina.jpg" alt="" id="imgVac">
+  <main>
+    <section id="accordion">
+      <h3 id="vac1">Coronavac</h3>
+      <div>
+        <p>
+        <ul id="vac2">
+
+          <li><b>Situação:</b> Vacina aprovada pela Anvisa para uso emergencial no dia 17/01/2021.</li>
+          <li><b>Desenvolvedor:</b> Sinovac (China)</li>
+          <li><b>Feita em parceria com:</b> Instituto Butantan (SP)</li>
+          <li><b>Estados no Brasil em que foi testada:</b> São Paulo, Rio de Janeiro, Minas Gerais, Distrito Federal,
+            Paraná e Rio Grande do Sul, em 22 centros de pesquisa</li>
+          <li><b>Voluntários:</b> No Brasil, 13 mil (inicialmente eram 9 mil)</li>
+          <li><b>Boas práticas de fabricação:</b> Inspeção feita no Butantan entre 30/11 e 4/12. Certificação publicada
+            em 21/12.</li>
+          <li><b>Eficácia:</b> Eficácia global de 50,38%. Eficácia de 78% em casos leves e de 100% em
+            casos graves e
+            moderados.<br></li><br>
+
+        </ul>
+        </p>
+      </div>
+      <h3 id="vac1">ChAdOx1 nCoV-19 (Vacina de Oxford)</h3>
+      <div>
+        <p>
+        <ul id="vac2">
+          <li><b>Situação:</b>Vacina aprovada pela Anvisa para uso emergencial no dia 17 de janeiro de 2021.</li>
+          <li><b>Desenvolvedor:</b>Universidade de Oxford e AstraZenec</li>
+          <li><b>País de origem:</b>Reino Unido</li>
+          <li><b>Feita em parceria com:</b>Fiocruz, Unifesp e Ministério da Saúde.</li>
+          <li><b>Estados no Brasil em que foi testada:</b>São Paulo, no Centro Paulista de Investigação Clínica (Cepic),
+            e na Bahia, na Instituição Obras Sociais Irmã Dulce</li>
+          <li><b>Voluntários:</b>10 mil no Brasil</li>
+          <li><b>Boas práticas de fabricação:</b>Inspeção feita na Fiocruz entre 7/12 e 4/12. Certificação publicada em
+            23/12.</li>
+          <li><b>Eficácia:</b>Eficácia média de 70,4%. No regime de dosagem com duas completas atingiu 62,1% de
+            eficácia. Com dose fracionada e dose completa, atingiu 90% de eficácia.</li>
+        </ul>
+        </p>
+      </div>
+    </section>
+
+    <section class="anime_inicial">
+
+    </section>
+    <section class="anime_inicial">
+      <!-- <div class="duvidas">
+        <ul>
+          <h2>Dúvidas frequentes:</h2><br>
+          <li><b> Uso de máscara previne a infecção?</b></li><br>
+          <p>Sim. A máscara previne o contato entre as partículas contaminadas
+            exaladas pelo indivíduo doente.</p><br>
+
+          <li> <b>Distanciamento Social funciona?</b></li><br>
+          <p>Sim. O distanciamento social é uma das medidas mais importantes e <br> eficazes
+            para reduzir o avanço da pandemia da covid-19.</p><br>
+
+          <li> <b>Higienização das mãos é importante? </b></li><br>
+          <p>Sim. É fundamental reforçar um hábito básico de higiene: lavar as mãos <br> com
+            água e sabão. E quando não for possível, o álcool gel é, sim, um substituto <br>
+            para essa higienização.</p><br>
+        </ul>
+      </div> -->
+    </section>
+
+    <section class="anime_inicial">
+      <ul>
+        <li> <b>Posso tomar Hidroxicloroquina para prevenir contra a Covid 19?</b></li><br>
+        <p>Não. Segundo um novo estudo publicado no jornal científico Clinical <br>
+          Microbiology and Infection,a hidroxicloroquina não é eficaz no <br>
+          tratamento da covid-19.</p><br>
+
+        <li> <b>Qualquer tipo de álcool serve?</b></li><br>
+        <p>Não. A Sociedade Brasileira de Dermatologia orienta utilizar o álcool <br>
+          em gel 70% medicinal e nunca o de limpeza doméstica.</p><br>
+
+        <li> <b>A vacina da gripe previne contra a Covid-19?</b></li><br>
+        <p>Não. A campanha de vacinação contra a gripe foi antecipada, porém não <br>
+          previne contra o novo coronavírus.</p> <br>
+
+      </ul>
+      <h3>
+        Potenciais técnicas de tratamento e/ou novos medicamentos:
+      </h3>
+      <p>
+        Por enquanto, apenas dois medicamentos são amplamente aceitos como eficazes
+        contra COVID-19. O primeiro é o caro medicamento <b> antiviral remdesivir </b> , que encurta
+        a internação hospitalar ao interromper a capacidade de replicação do vírus, mas não
+        parece reduzir o risco de morte por COVID-19. O outro, o barato <b> esteróide dexametasona</b>,
+        é o único medicamento confirmado em ensaios clínicos para reduzir o risco de morte
+        entre pacientes graves com COVID-19.
+      </p>
+      <br>
+      <br>
+      Antes da epidemia, São Paulo contava com <b>3,5 mil</b> leitos de UTI e, até abril, terá <b>9,2 mil</b> leitos UTI
+      SUS,
+      quase o
+      triplo a mais.
+      <br>
+      <br>
+      <br>
+    </section>
+
+
+    <section id="uti" class="anime_inicial">
+      <button id="funcionaToggle">
+        <h5>Mais:</h5>
+      </button>
+      <div id="funciona"></div>
+    </section>
+
+    <section class="anime_inicial corPadrao" id="fases">
+      <form action="">
+        <label for="taxaOcupacao">Leitos de UTI COVID</label>
+        <input type="number" name="taxaOcupacao" id="taxaOcupacao" placeholder="Em percentual" />
+        <label for="leitosEnfermaria">Leitos de Enfermaria</label>
+        <input type="number" name="leitosEnfermaria" id="leitosEnfermaria" placeholder="Em percentual" />
+
+        <button id="enviar">Enviar</button>
+      </form>
+    </section>
+
+    <section id="fase1Div">
+      <table id="table">
+        <tr>
+          <th id="t1"><b>Setores temáticos:</b></th>
+          <th id="fase1">Fase 1 </th>
+        </tr>
+        <tr>
+          <th id="t1">Espaços públicos</th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Atividades imobiliárias </th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Concessionárias </th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Escritórios</th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Bares, restaurantes e similares</th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Comércio </th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Shopping center</th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Salão de beleza </th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Academia </th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Teatro, cinemas</th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Promover eventos que geram aglomeração, incl.
+            esportivos
+          </th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Educação
+          </th>
+          <th id="t3">A ser definido</th>
+        </tr>
+        <tr>
+          <th id="t1">Transporte</th>
+          <th id="t3">A ser definido</th>
+        </tr>
+      </table>
+    </section>
+
+    <section id="fase2Div">
+      <table id="table">
+        <tr>
+          <th id="t1"><b>Setores temáticos:</b></th>
+          <th id="t4">Fase 2</th>
+        </tr>
+        <tr>
+          <th id="t1">Espaços públicos</th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Atividades imobiliárias </th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Concessionárias </th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Escritórios</th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Bares, restaurantes e similares</th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Comércio </th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Shopping center</th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Salão de beleza </th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Academia </th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Teatro, cinemas</th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Promover eventos que geram aglomeração, incl.
+            esportivos
+          </th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Educação
+          </th>
+          <th id="t3">A ser definido</th>
+        </tr>
+        <tr>
+          <th id="t1">Transporte</th>
+          <th id="t3">A ser definido</th>
+        </tr>
+      </table>
+    </section>
+    <section id="fase3Div">
+      <table id="table">
+        <tr>
+          <th id="t1"><b>Setores temáticos</b></th>
+          <th id="t5">Fase 3</th>
+        </tr>
+        <tr>
+          <th id="t1">Espaços públicos</th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Atividades imobiliárias </th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Concessionárias </th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Escritórios</th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Bares, restaurantes e similares</th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Comércio </th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Shopping center</th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Salão de beleza </th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Academia </th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Teatro, cinemas</th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Promover eventos que geram aglomeração, incl.
+            esportivos
+          </th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Educação
+          </th>
+          <th id="t3">A ser definido</th>
+        </tr>
+        <tr>
+          <th id="t1">Transporte</th>
+          <th id="t3">A ser definido</th>
+        </tr>
+      </table>
+    </section>
+    <section id="fase4Div">
+      <table id="table">
+        <tr>
+          <th id="t1"><b>Setores temáticos</b></th>
+          <th id="fase4">Fase 4</th>
+        </tr>
+        <tr>
+          <th id="t1">Espaços públicos</th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Atividades imobiliárias </th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Concessionárias </th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Escritórios</th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Bares, restaurantes e similares</th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Comércio </th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Shopping center</th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Salão de beleza </th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Academia </th>
+          <th id="t4">Aberto com restrições</th>
+        </tr>
+        <tr>
+          <th id="t1">Teatro, cinemas</th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Promover eventos que geram aglomeração, incl.
+            esportivos
+          </th>
+          <th id="t2">x</th>
+        </tr>
+        <tr>
+          <th id="t1">Educação
+          </th>
+          <th id="t3">A ser definido</th>
+        </tr>
+        <tr>
+          <th id="t1">Transporte</th>
+          <th id="t3">A ser definido</th>
+        </tr>
+      </table>
+    </section>
+    <section id="fase5Div">
+      <table id="table">
+        <tr>
+          <th id="t1"><b>Setores temáticos</b></th>
+          <th id="fase5">Fase 5</th>
+        </tr>
+        <tr>
+          <th id="t1">Espaços públicos</th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Atividades imobiliárias </th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Concessionárias </th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Escritórios</th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Bares, restaurantes e similares</th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Comércio </th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Shopping center</th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Salão de beleza </th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Academia </th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Teatro, cinemas</th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Promover eventos que geram aglomeração, incl.
+            esportivos
+          </th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Educação
+          </th>
+          <th id="t6">✓</th>
+        </tr>
+        <tr>
+          <th id="t1">Transporte</th>
+          <th id="t6">✓</th>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    Desenvolvido por stayHome
+    <div id="data-hora"></div>
+  </footer>
+
+  <script src="script/infoVacina.js"></script>
+</body>
+
+</html>

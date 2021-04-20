@@ -1,4 +1,5 @@
 # Projeto-Final-jQuery made on the SoulCode Academy Bootcamp
+Grupo: Ana, Flávia e Leo.
 
 Site informativo sobre a Pandemia Coronavírus ,
 Trate que o mesmo será desenvolvido para um cliente final , podendo ser uma prefeitura , estado ou iniciativa privada . Onde deve o cadastro e controle de doses vacinais
